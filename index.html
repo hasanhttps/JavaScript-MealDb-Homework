@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Meal Db</title>
+</head>
+<body>
+    
+    <div class="header">
+        <form>
+            <div class="searchbar">
+                <button class="searchbt" id="search" type="button">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+                <input class="searchinput" placeholder="Search Recipes" type="text" id="mealName">
+            </div>
+        </form>
+
+        <p class="t1">Explore Recipes</p>
+    </div>
+
+    <div class="result">
+        <p id="name"></p>
+        <div class="visiualinfo">
+            <img id="mealImg">
+            <iframe width="460" height="300" id="mealVideo" frameborder="0" allowfullscreen></iframe>
+        </div>
+
+        <p id="ingredients">
+
+        </p>
+
+        <p id="instructions">
+
+        </p>
+    </div>
+    <script src="index.js"></script>
+    <script src="https://kit.fontawesome.com/5ac1ad0237.js" crossorigin="anonymous"></script>
+</body>
+</html>
