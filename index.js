@@ -12,6 +12,11 @@ submit.addEventListener('click', () => {
     getMealInfo();
 });
 
+function HandlerSubmit(e){
+    e.preventDefault();
+    getMealInfo();
+}
+
 async function getMealInfo(){
     const data = await fetch(api + maletxt.value)
         .then(res => res.json()).then(res => res);
